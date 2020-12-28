@@ -1,0 +1,46 @@
+[
+  {
+    "name": "testapp2",
+    "version": "1.0.1",
+    "description": "A test application number 2",
+    "author": "john doe",
+    "fspm": {
+      "title": "Test 2",
+      "url": "https://flightsim.to/file/3181/fspm-vfr-map",
+      "favicon": "favicon.png"
+    }
+  },
+  {
+    "name": "flightmap",
+    "version": "1.0.1",
+    "description": "In game map following your plane",
+    "author": "thomas",
+    "fspm": {
+      "title": "Flight Map",
+      "url": "https://flightsim.to/file/3181/fspm-vfr-map",
+      "favicon": "favicon.png"
+    }
+  },
+  {
+    "name": "testapp1",
+    "version": "1.0.0",
+    "description": "A test application number 1",
+    "author": "john doe",
+    "fspm": {
+      "title": "Test 1",
+      "url": "https://flightsim.to/file/3181/fspm-vfr-map",
+      "favicon": "favicon.png"
+    }
+  },
+  {
+    "name": "testapp3",
+    "version": "1.0.0",
+    "description": "A test application number 3",
+    "author": "john doe",
+    "fspm": {
+      "title": "Test 3",
+      "url": "https://flightsim.to/file/3181/fspm-vfr-map",
+      "favicon": "favicon.png"
+    }
+  }
+]

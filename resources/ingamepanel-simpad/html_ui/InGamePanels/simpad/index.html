@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/SCSS/common.css" />
+  <link rel="stylesheet" href="fspm.css" />
+  <script type="text/javascript" src="/JS/coherent.js"></script>
+  <script type="text/javascript" src="/JS/common.js"></script>
+  <script type="text/javascript" src="/JS/dataStorage.js"></script>
+  <script type="text/javascript" src="/JS/buttons.js"></script>
+  <script type="text/javascript" src="/JS/simvar.js"></script>
+  <script type="text/javascript" src="/JS/Services/ToolBarPanels.js"></script>
+
+  <script type="text/javascript" src="/Pages/VCockpit/Instruments/Shared/Utils/DataReadManager.js"></script>
+  <script type="text/javascript" src="/Pages/VCockpit/Instruments/Shared/BaseInstrument.js"></script>
+
+  <link rel="import" href="/Pages/VCockpit/Instruments/Shared/Map/MapInstrument.html" />
+
+  <link rel="import" href="/templates/ingameUi/ingameUi.html" />
+  <link rel="import" href="/templates/ingameUiHeader/ingameUiHeader.html" />
+  <link rel="import" href="/templates/checkbox/checkbox.html" />
+  <link rel="import" href="/templates/NewPushButton/NewPushButton.html" />
+  <link rel="import" href="/templates/ToggleButton/ToggleButton.html" />
+</head>
+
+<body class="border-box">
+  <ingamepanel-custom>
+    <ingame-ui id="CustomPanel" panel-id="PANEL_CUSTOM_PANEL" title="" class="ingameUiFrame" content-fit="true"
+      min-width="160" min-height="90">
+      <div id="CustomPanelWrap">
+        <div id="header">
+          <div><span>SimPad</span> <img src="img/gps.png"></div>
+          <div><span id="time">00:00</span></div>
+          <div><img src="img/fakesignal.png"></div>
+        </div>
+        <div id="sliderholder"></div>
+        <iframe id="CustomPanelIframe"></iframe>
+        <img id="homebut" src="img/home.png" onclick="backToHome()"></img>
+      </div>
+    </ingame-ui>
+  </ingamepanel-custom>
+</body>
+<script type="text/javascript" src="apps.js"></script>
+<script type="text/javascript" src="fspm.js"></script>
+</html>

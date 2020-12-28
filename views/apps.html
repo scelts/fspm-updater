@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>FSPM Installer</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../resources/css/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark sticky-top bg-dark shadow">
+    <a class="navbar-brand href=" #">Company name</a>
+  </nav>
+
+  <div class="container-fluid">
+    <nav id="sidebarMenu" class="d-md-block bg-light sidebar">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="apps.html">
+              Installed Apps
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="store.html">
+              Store
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="filesystem.html">
+              File System
+            </a>
+          </li>
+      </div>
+    </nav>
+  </div>
+  <div class="maincontent">
+    <ul class="list-unstyled">
+      <li class="media">
+        <div class="media-body">
+          <h3 class="mt-0 mb-1">SimPad</h3>
+          <div id="simpadstatus">SimPad is not installed</div>
+          <button id="installsimpad" class="btn btn-primary">Add to MSFS</button>
+        </div>
+      </li>
+      <h3 class="mt-0 mb-1">Apps</h3><button id="addapp">Add new</button>
+      <div id="apptable">
+      </div>
+    </ul>
+  </div>
+</body>
+<script src="renderers/mainrender.js"></script>
+<script src="renderers/apps.js"></script>
+
+</html>

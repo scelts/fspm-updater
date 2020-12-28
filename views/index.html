@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>FSPM Installer</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/bootstrap-icons.svg">
+  <link rel="stylesheet" href="../resources/css/main.css">
+  <script src="renderers/mainrender.js"></script>
+</head>
+
+<body>
+
+
+  <div class="maincontent">
+    <ul class="list-unstyled">
+
+      <ul class="list-unstyled">
+        <li class="media simpad">
+          <img class="mr-3" src="../resources/img/simpadicon.svg" alt="icon">
+          <div class="media-body">
+            <span>
+              <h3 class="mt-0 mb-1 title">SimPad</h3>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
+                <svg class="bi" width="32" height="32">
+                  <use xlink:href="bootstrap-icons.svg#gear-fill" />
+                </svg>
+              </button>
+            </span>
+            <div id="simpadstatus">SimPad is not installed</div>
+            <button id="installsimpad" class="btn btn-primary">Add to MSFS</button>
+          </div>
+        </li>
+        <span class="apptitle">
+          <div>Apps</div>
+          <button id="addapp" class="btn btn-link">
+            <svg class="bi" width="30" height="30">
+              <use xlink:href="bootstrap-icons.svg#folder-plus" />
+            </svg>
+          </button>
+        </span>
+
+        <div id="apptable">
+        </div>
+      </ul>
+    </ul>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <li class="media">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">MSFS Community Folder</h5>
+                The folder where you install the MSFS addons <br />
+                <button id="changecomm" class="btn btn-primary">Choose Folder</button>
+                <button id="comfolbtn" class="btn btn-link">Folder</button> <br />
+              </div>
+            </li>
+            <!--li class="media my-4">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">File Server <span id="serverstatus" data-toggle="tooltip" data-placement="right"
+                    class="badge"></span></h5>
+
+                The server needs to run outside of the MSFS, so that the in-game apps can read/write the data from the
+                system<br />
+                You can choose here the root folder to expose in in-game <br />
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="runatstart">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Run at Startup
+                  </label>
+                </div>
+                <button id="changefilsys" class="btn btn-primary">Choose Folder</button>
+                <button id="filesysbtn" class="btn btn-link">Folder</button> <br />
+                <div class="form-group row">
+                  <label for="portnumber" class="col-sm-2 col-form-label">Port Number: </label>
+                  <div class="col-sm-2">
+                    <input class="form-control" id="portnumber" type="number" value="9000">
+                  </div>
+                  <div class="col-sm-2">
+                    <button id="startstopser" class="btn btn-link">
+                      <svg class="bi" width="32" height="32">
+                        <use xlink:href="bootstrap-icons.svg#arrow-counterclockwise" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div!-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script src="renderers/index.js"></script>
+
+</html>
